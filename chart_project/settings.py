@@ -140,3 +140,5 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+APPEND_SLASH=False

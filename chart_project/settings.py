@@ -86,8 +86,15 @@ WSGI_APPLICATION = 'chart_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'testDB',
+        'USER': 'sa',
+        'PASSWORD': '',
+        'HOST': '192.168.41.86',
+        'PORT': '1433',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server'
+        },
     }
 }
 

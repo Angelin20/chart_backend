@@ -1,4 +1,4 @@
-wheel==0.33.6
+wheel==0.38.1
 django==2.2.8
 djangorestframework==3.9.2
 django-cors-headers==3.2.0
